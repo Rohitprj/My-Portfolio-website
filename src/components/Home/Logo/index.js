@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
-import { useRef } from 'react'
+import { useRef } from "react";
 
-import LogoS from '../../../assets/images/logo-s.png'
-import './index.scss'
+import LogoS from "../../../assets/images/logo-s.png";
+import "./index.scss";
 
 const Logo = () => {
-  const bgRef = useRef()
-  const outlineLogoRef = useRef()
-  const solidLogoRef = useRef()
+  const bgRef = useRef();
+  const outlineLogoRef = useRef();
+  const solidLogoRef = useRef();
 
   return (
     <div className="logo-container" ref={bgRef}>
@@ -38,7 +38,7 @@ const Logo = () => {
         </g>
       </svg>
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

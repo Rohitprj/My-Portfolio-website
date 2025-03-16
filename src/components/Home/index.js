@@ -4,7 +4,7 @@ import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 
 import Logo from "./Logo";
-import LogoTitle from "../../assets/images/logo-s.png";
+import LogoTitle from "../../assets/images/letter-r.png";
 import AnimatedLetters from "../AnimatedLetters";
 import "./index.scss";
 import styles from "./index.scss";
@@ -12,9 +12,9 @@ import styles from "./index.scss";
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
-  const nameArray = "udip".split("");
+  const nameArray = "ohit".split("");
   const jobArray = "Software Engineer".split("");
-  const interestArray = "FullStack | DevOps | Web3".split("");
+  const interestArray = "FullStack".split("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -33,7 +33,7 @@ const Home = () => {
             <br />
             <span className={`${letterClass} _13`}>I</span>
             <span className={`${letterClass} _14`}>'m</span>
-            <img src={LogoTitle} alt="Sudip Banerjee" />
+            <img src={LogoTitle} />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
@@ -52,15 +52,12 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>
-            Streamlining Workflows | Deploying Intelligent Systems | Building
-            Scalable Applications
-          </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        {/* <img src={LogoTitle} className="right-align-logo" /> */}
+        {/* <Logo /> */}
       </div>
 
       <Loader type="pacman" />

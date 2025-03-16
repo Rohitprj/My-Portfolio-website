@@ -88,5 +88,12 @@
     -o-user-select: none;
     user-select: none;
   }
+  .right-align-logo {
+    position: absolute;
+    right: 20px;  /* Adjust the distance from the right edge as needed */
+    bottom: 20px; /* Optional, adjust if you want it placed differently */
+    max-width: 100px; /* Optional, if you want to limit the size */
+  }
+  
 }
 
