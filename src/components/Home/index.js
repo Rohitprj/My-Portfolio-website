@@ -12,7 +12,7 @@ import styles from "./index.scss";
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
 
-  const nameArray = "ohit".split("");
+  const nameArray = "ohit kumar".split("");
   const jobArray = "Software Engineer".split("");
   const interestArray = "FullStack".split("");
 
