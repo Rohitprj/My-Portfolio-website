@@ -1,22 +1,22 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
-import Loader from 'react-loaders'
+import Loader from "react-loaders";
 
-import WordCloud from './wordcloud'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
+import WordCloud from "./wordcloud";
+import AnimatedLetters from "../AnimatedLetters";
+import "./index.scss";
 
 const Skills = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
-  const skillsArray = 'Skills'.split('')
+  const skillsArray = "Skills".split("");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 2000)
-    return () => clearTimeout(timer)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -31,17 +31,17 @@ const Skills = () => {
             <br />
           </h1>
           <p>
-            I have a strong foundation in both development and operations, with
-            a focus on creating seamless, efficient systems. My experience
-            includes automating deployment processes, designing scalable
-            applications, and working with cloud technologies to deliver
+            I have a strong foundation in development and operations, with a
+            focus on creating seamless, efficient systems. Designing scalable
+            applications, and working with backend technologies to deliver
             reliable solutions.
           </p>
           <p>
-            My skill set spans across DevOps, machine learning, full-stack
-            development, and cloud infrastructure. I’m committed to staying
-            updated with the latest advancements and continually refining my
-            expertise to tackle complex challenges effectively.
+            My skill set spans across full-stack development using React Native
+            mobile app development and MERN stack. I’m committed to staying
+            updated with the latest advancements in JavaScript ecosystems and
+            continually refining my expertise to build scalable,
+            high-performance applications across web and mobile platforms.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const Skills = () => {
 
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;
