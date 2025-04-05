@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react";
 
 import {
   faAws,
@@ -8,24 +8,27 @@ import {
   faGolang,
   faJsSquare,
   faPython,
-} from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Loader from 'react-loaders'
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { BsFiletypeSql } from "react-icons/bs";
+import { FaReact } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import Loader from "react-loaders";
 
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
+import AnimatedLetters from "../AnimatedLetters";
+import "./index.scss";
 
 const About = () => {
-  const aboutArray = 'About Me'.split('')
+  const aboutArray = "About Me".split("");
 
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 2000)
-    return () => clearTimeout(timer)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
@@ -39,11 +42,10 @@ const About = () => {
             />
           </h1>
           <p>
-            I’m a DevOps and Full Stack Engineer with over 2 years of
-            experience, specializing in automating workflows, optimizing CI/CD
-            pipelines, and deploying intelligent systems. My expertise spans
-            across DevOps, full-stack, blockchain development, and aritificial
-            intelligence, with a strong foundation in security.
+            "I’m a Full Stack Engineer with 1 years of experience, focused on
+            building seamless mobile applications using React Native. I bring
+            expertise in hybrid mobile apps, also skilled in full-stack web
+            solutions, backend technologies and Databases."
           </p>
           <p>
             I’m passionate about solving real-world problems through innovative
@@ -56,16 +58,17 @@ const About = () => {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faPython} color="#4B8BBE" />
+              {/* <FontAwesomeIcon icon={faPython} color="#4B8BBE" /> */}
+              <SiMongodb />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faAws} color="#F06529" />
             </div>
             <div className="face3">
-              <FontAwesomeIcon icon={faDocker} color="#28A4D9" />
+              <FaReact />
             </div>
             <div className="face4">
-              <FontAwesomeIcon icon={faGolang} color="#5ED4F4" />
+              <BsFiletypeSql />
             </div>
             <div className="face5">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
@@ -78,7 +81,7 @@ const About = () => {
       </div>
       <Loader type="pacman" />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
