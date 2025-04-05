@@ -57,7 +57,7 @@ const Home = () => {
           </Link>
         </div>
         {/* <img src={LogoTitle} className="right-align-logo" /> */}
-        {/* <Logo /> */}
+        <Logo />
       </div>
 
       <Loader type="pacman" />

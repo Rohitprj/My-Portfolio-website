@@ -9,9 +9,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, NavLink } from "react-router-dom";
 
+import LogoSubtitle from "../../assets/images/code.png";
 import codechefLogo from "../../assets/images/codechef.png";
 import LogoS from "../../assets/images/logo-s.png";
-import LogoSubtitle from "../../assets/images/output-onlinepngtools.png";
 
 const Sidebar = () => {
   return (
@@ -19,7 +19,7 @@ const Sidebar = () => {
       <div className="nav-bar">
         <Link className="logo" to="/">
           {/* <img src={LogoS} alt="Logo" /> */}
-          <img className="sub-logo" src={LogoSubtitle} alt="sudip" />
+          <img className="sub-logo" src={LogoSubtitle} alt="rohit" />
           {/* <h3>Rohit</h3> */}
         </Link>
         <nav>
