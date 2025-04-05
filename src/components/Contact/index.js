@@ -103,19 +103,18 @@ const Contact = () => {
   };
 
   const verifyEmail = async (email) => {
-    let res = await fetch(
-      `https://mailok-email-validation.p.rapidapi.com/verify?email=${email}`,
-      {
-        method: "GET",
-        headers: {
-          "x-rapidapi-host": process.env.REACT_APP_RAPIDAPI_HOST,
-          "x-rapidapi-key": process.env.REACT_APP_RAPIDAPI_KEY,
-        },
-      }
-    );
-
-    let data = await res.json();
-    return res.status === 200 && data.status === "valid";
+    // let res = await fetch(
+    //   `https://mailok-email-validation.p.rapidapi.com/verify?email=${email}`,
+    //   {
+    //     method: "GET",
+    //     headers: {
+    //       "x-rapidapi-host": process.env.REACT_APP_RAPIDAPI_HOST,
+    //       "x-rapidapi-key": process.env.REACT_APP_RAPIDAPI_KEY,
+    //     },
+    //   }
+    // );
+    // let data = await res.json();
+    // return res.status === 200 && data.status === "valid";
   };
 
   return (
