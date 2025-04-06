@@ -55,7 +55,6 @@ const About = () => {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              {/* <FontAwesomeIcon icon={faPython} color="#4B8BBE" /> */}
               <SiMongodb />
             </div>
             <div className="face2">

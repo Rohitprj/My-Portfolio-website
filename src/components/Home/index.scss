@@ -1,12 +1,23 @@
 .home-page {
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
+    position: relative;
+    top: 47%;
     transform: translateY(-50%);
-    width: 40%;
-    max-height: 90%;
-
+    width: 80%;
+    margin: 0 auto;
+    max-height: 100%;
+  
+    @media (max-width: 768px) {
+      top: 30%;
+      transform: none;
+      width: 90%;
+      padding: 0 10px;
+    }
     h1 {
       color: #fff;
       font-size: 56px;
@@ -37,8 +48,11 @@
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.9;
       }
+      @media (max-width: 768px) {
+        font-size: 42px;
+        line-height: 38px;
+      }
     }
-
     img {
       margin-left: 20px;
       opacity: 0;
@@ -82,18 +96,84 @@
   }
 
   .selectDisable {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
     user-select: none;
   }
-  .right-align-logo {
+  .logo-wrapper {
     position: absolute;
-    right: 20px;  /* Adjust the distance from the right edge as needed */
-    bottom: 20px; /* Optional, adjust if you want it placed differently */
-    max-width: 100px; /* Optional, if you want to limit the size */
+    bottom: 250px;
+    left: 85%;
+    transform: translateX(-50%);
+    max-width: 100px;
+  
+    @media (max-width: 768px) {
+      display: none; // Hide logo on mobile
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .text-zone {
+      width: 60%;
+      left: 5%;
+    }
+
+    .flat-button {
+      font-size: 12px;
+      padding: 8px 16px;
+    }
+
+    h1 {
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .text-zone {
+      position: static;
+      transform: none;
+      width: 90%;
+      margin: auto;
+      padding-top: 80px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      line-height: 40px;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+    img {
+      margin-left: 10px;
+      width: 24px;
+    }
+
+    .flat-button {
+      margin: 20px auto 0;
+      float: none;
+      display: inline-block;
+    }
+
+    .logo-wrapper {
+      display: none; // hide logo on mobile
+    }
   }
   
 }
 
+.mobile-break {
+  display: none;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+
+  @media (max-width: 768px) {
+    display: block;
+    height: 1rem; // optional, tweak if you want space between lines
+  }
+}
