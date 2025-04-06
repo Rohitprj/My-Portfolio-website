@@ -3,11 +3,8 @@ import { useEffect, useState } from "react";
 
 import {
   faAws,
-  faDocker,
   faGitAlt,
-  faGolang,
   faJsSquare,
-  faPython,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BsFiletypeSql } from "react-icons/bs";
