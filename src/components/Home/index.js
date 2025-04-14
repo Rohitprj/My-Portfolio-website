@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+import { MdOutlineFileDownload } from "react-icons/md";
 import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 
@@ -66,12 +67,29 @@ const Home = () => {
             />
           </h1>
           <br className="mobile-break" />
-          <Link to="/contact" className="flat-button">
+          {/* <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
           <Link to="/contact" className="flat-button">
             RESUME
-          </Link>
+            <MdOutlineFileDownload />
+          </Link> */}
+          <div>
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+
+            <Link
+              to="/resume.pdf"
+              target="_blank"
+              className="flat-button resume-button"
+            >
+              RESUME
+              <span className="download-icon">
+                <MdOutlineFileDownload />
+              </span>
+            </Link>
+          </div>
         </div>
         {/* <Logo /> */}
         <div className="logo-wrapper">
