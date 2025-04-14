@@ -16,9 +16,7 @@ const Sidebar = () => {
     <>
       <div className="nav-bar">
         <Link className="logo" to="/">
-          {/* <img src={LogoS} alt="Logo" /> */}
           <img className="sub-logo" src={LogoSubtitle} alt="rohit" />
-          {/* <h3>Rohit</h3> */}
         </Link>
         <nav>
           <NavLink exact="true" activeclassname="active" to="/">
@@ -63,15 +61,6 @@ const Sidebar = () => {
               <FontAwesomeIcon icon={faGithub} color="#b9b9b9" />
             </a>
           </li>
-          {/* <li>
-            <a
-              href="https://www.codechef.com/users/metal_oopa"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={codechefLogo} width="24" alt="Codechef" />
-            </a>
-          </li> */}
         </ul>
       </div>
     </>

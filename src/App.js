@@ -1,12 +1,12 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from "react-router-dom";
 
-import About from './components/About'
-import Contact from './components/Contact'
-import Home from './components/Home'
-import Layout from './components/Layout'
-import Skills from './components/Skills'
-import Soundbar from './components/Soundbar'
-import './App.scss'
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Home from "./components/Home";
+import Layout from "./components/Layout";
+import Skills from "./components/Skills";
+import Soundbar from "./components/Soundbar";
+import "./App.scss";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         </Route>
       </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
