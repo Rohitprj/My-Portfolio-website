@@ -44,6 +44,7 @@ const Sidebar = () => {
         </nav>
         <ul>
           <li>
+            {/* <h2>Resume</h2> */}
             <a
               href="https://www.linkedin.com/in/rohit-kumar-4b5800218/"
               target="_blank"

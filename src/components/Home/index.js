@@ -69,6 +69,9 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+          <Link to="/contact" className="flat-button">
+            RESUME
+          </Link>
         </div>
         {/* <Logo /> */}
         <div className="logo-wrapper">
