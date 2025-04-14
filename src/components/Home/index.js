@@ -67,13 +67,6 @@ const Home = () => {
             />
           </h1>
           <br className="mobile-break" />
-          {/* <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
-          <Link to="/contact" className="flat-button">
-            RESUME
-            <MdOutlineFileDownload />
-          </Link> */}
           <div>
             <Link to="/contact" className="flat-button">
               CONTACT ME
