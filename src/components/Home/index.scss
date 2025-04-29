@@ -3,7 +3,7 @@
     font-size: 32px;
     line-height: 40px;
   }
-  
+
   .text-zone {
     position: relative;
     top: 47%;
@@ -11,13 +11,14 @@
     width: 80%;
     margin: 0 auto;
     max-height: 100%;
-  
+
     @media (max-width: 768px) {
       top: 30%;
       transform: none;
       width: 90%;
       padding: 0 10px;
     }
+
     h1 {
       color: #fff;
       font-size: 56px;
@@ -48,11 +49,18 @@
         animation: fadeIn 1s 1.7s backwards;
         opacity: 0.9;
       }
+
       @media (max-width: 768px) {
         font-size: 42px;
         line-height: 38px;
+
+        &:before,
+        &:after {
+          display: none;
+        }
       }
     }
+
     img {
       margin-left: 20px;
       opacity: 0;
@@ -61,6 +69,11 @@
       animation: rotateIn 1s linear both;
       animation-delay: 1.4s;
       user-select: none;
+
+      @media (max-width: 768px) {
+        margin-left: 10px;
+        width: 24px;
+      }
     }
   }
 
@@ -94,26 +107,35 @@
       background: #00ff7f;
       color: rgb(0, 0, 0);
     }
+
+    @media (max-width: 768px) {
+      margin: 20px auto 0;
+      float: none;
+      display: inline-block;
+    }
   }
-.flat-button .download-icon svg {
-  font-size: 20px; /* Adjust as needed */
-  vertical-align: middle;
-}
+
+  .flat-button .download-icon svg {
+    font-size: 20px; /* Adjust as needed */
+    vertical-align: middle;
+  }
+
   .selectDisable {
     user-select: none;
   }
+
   .logo-wrapper {
     position: absolute;
     bottom: 250px;
     left: 85%;
     transform: translateX(-50%);
     max-width: 100px;
-  
+
     @media (max-width: 768px) {
       display: none; // Hide logo on mobile
     }
   }
-  
+
   @media (max-width: 1024px) {
     .text-zone {
       width: 60%;
@@ -144,11 +166,6 @@
     h1 {
       font-size: 32px;
       line-height: 40px;
-
-      &:before,
-      &:after {
-        display: none;
-      }
     }
 
     img {
@@ -166,7 +183,6 @@
       display: none; // hide logo on mobile
     }
   }
-  
 }
 
 .mobile-break {
